@@ -2,11 +2,13 @@
 import java.util.Scanner;
 public class Line_Comparison {
 
-        
+        static Double length1 = 0.0d;
+        static Double length2 = 0.0d;
+
 	public static void main(String[] args) {
 
 		System.out.println("Welcome to Line Comparison Computation Program");
-                
+               
                 Line_Comparison L1 = new Line_Comparison();
                 L1.Length_Calculation();
                 L1.Length_Comparison();
@@ -25,7 +27,7 @@ public class Line_Comparison {
 			y1=sc.nextDouble();
 			y2=sc.nextDouble();
 
-			double length1 = Math.sqrt(Math.pow((x2 - x1),2) + Math.pow((y2 -y1),2));
+			length1 = Math.sqrt(Math.pow((x2 - x1),2) + Math.pow((y2 -y1),2));
 			System.out.println("Length of Line = "+length1);
                         
                         System.out.println("Enter the  Co-ordinates of 2nd Line");
@@ -35,9 +37,10 @@ public class Line_Comparison {
                         y3=sc.nextDouble();
                         y4=sc.nextDouble();
 
-                        double length2 = Math.sqrt(Math.pow((x4 - x3),2) + Math.pow((y4 -y3),2));
+                        length2 = Math.sqrt(Math.pow((x4 - x3),2) + Math.pow((y4 -y3),2));
                         System.out.println("Length of Line = "+length2);
-
+                       
+                 
 		}
 
        public static void Length_Comparison(){
@@ -47,8 +50,8 @@ public class Line_Comparison {
                         }
                         else
                         {
-                                System.out.println("The length of line are not equals");
+                              System.out.println("The length of line are not equals");
                         }
-  
-     }                 
+
+                  }                 
   }
