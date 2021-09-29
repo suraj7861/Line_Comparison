@@ -18,7 +18,6 @@ public class Line_Comparison {
 			x1=sc.nextDouble();
 			x2=sc.nextDouble();
 
-                        System.out.println("Enter the  Co-ordinates of 2nd Line");
 			y1=sc.nextDouble();
 			y2=sc.nextDouble();
 
