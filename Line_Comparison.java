@@ -12,6 +12,7 @@ public class Line_Comparison {
                 Line_Comparison L1 = new Line_Comparison();
                 L1.Length_Calculation();
                 L1.Length_Comparison();
+                L1.Using_CompareToMehod();
          }
 
         public static void Length_Calculation(){
@@ -28,7 +29,7 @@ public class Line_Comparison {
 			y2=sc.nextDouble();
 
 			length1 = Math.sqrt(Math.pow((x2 - x1),2) + Math.pow((y2 -y1),2));
-			System.out.println("Length of Line = "+length1);
+			System.out.println("Length of Line 1 = "+length1);
                         
                         System.out.println("Enter the  Co-ordinates of 2nd Line");
                         x3=sc.nextDouble();
@@ -38,7 +39,7 @@ public class Line_Comparison {
                         y4=sc.nextDouble();
 
                         length2 = Math.sqrt(Math.pow((x4 - x3),2) + Math.pow((y4 -y3),2));
-                        System.out.println("Length of Line = "+length2);
+                        System.out.println("Length of Line 2 = "+length2);
                        
                  
 		}
@@ -54,4 +55,20 @@ public class Line_Comparison {
                         }
 
                   }                 
-  }
+  
+     public static void Using_CompareToMehod(){
+		int check = length1.compareTo(length2);
+		if(check == 0){
+			System.out.println("The length of line 1 is equals to line 2");
+		    }
+
+		else if(check > 0){
+			System.out.println("The length of line 1 is greater than  line 2");
+                   }
+
+		else
+			System.out.println("The length of line 1 is less than line 2");
+
+        }
+
+}
