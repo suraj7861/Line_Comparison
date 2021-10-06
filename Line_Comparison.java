@@ -2,20 +2,19 @@
 import java.util.Scanner;
 public class Line_Comparison {
 	
-	//declaring globle variables
+	//declaring global variables
 	//use Wrapper class to use equals method and compareTo() Method
 
-        static Double length1 = 0.0d;
-        static Double length2 = 0.0d;
+        public static Double length1 = 0.0d;
+        public static Double length2 = 0.0d;
 
 	public static void main(String[] args) {
 
 		System.out.println("Welcome to Line Comparison Computation Program");
                
-                Line_Comparison L1 = new Line_Comparison();
-                L1.Length_Calculation();
-                L1.Length_Comparison();
-                L1.Using_CompareToMehod();
+                Length_Calculation();
+                Length_Comparison();
+                Using_CompareToMehod();
          }
 	
 	//creating method for length calculation
@@ -60,7 +59,7 @@ public class Line_Comparison {
                         }
 
                   }                 
-      // creating method for compare length of lines using compareTo methos 	
+      // creating method for compare length of lines using compareTo methods 	
      public static void Using_CompareToMehod(){
 		int check = length1.compareTo(length2);
 		if(check == 0){
