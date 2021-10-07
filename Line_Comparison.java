@@ -11,7 +11,8 @@ public class Line_Comparison {
 	public static void main(String[] args) {
 
 		System.out.println("Welcome to Line Comparison Computation Program");
-               
+		
+		//methods call	               
                 Length_Calculation();
                 Length_Comparison();
                 Using_CompareToMehod();
@@ -32,6 +33,7 @@ public class Line_Comparison {
 			y1=sc.nextDouble();
 			y2=sc.nextDouble();
 
+			//calculate length of line 1
 			length1 = Math.sqrt(Math.pow((x2 - x1),2) + Math.pow((y2 -y1),2));
 			System.out.println("Length of Line 1 = "+length1);
                         
@@ -42,6 +44,7 @@ public class Line_Comparison {
                         y3=sc.nextDouble();
                         y4=sc.nextDouble();
 
+			//calculate length of line 2
                         length2 = Math.sqrt(Math.pow((x4 - x3),2) + Math.pow((y4 -y3),2));
                         System.out.println("Length of Line 2 = "+length2);
                        
