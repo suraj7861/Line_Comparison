@@ -9,9 +9,8 @@ public class Line_Comparison {
 
 		System.out.println("Welcome to Line Comparison Computation Program");
                
-                Line_Comparison L1 = new Line_Comparison();
-                L1.Length_Calculation();
-                L1.Length_Comparison();
+                Length_Calculation();
+                Length_Comparison();
          }
 
         public static void Length_Calculation(){
