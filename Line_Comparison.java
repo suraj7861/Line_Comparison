@@ -1,4 +1,4 @@
-
+//package lineComparison;
 import java.util.Scanner;
 public class Line_Comparison {
 	
@@ -7,19 +7,8 @@ public class Line_Comparison {
 
         public static Double length1 = 0.0d;
         public static Double length2 = 0.0d;
-
-	public static void main(String[] args) {
-
-		System.out.println("Welcome to Line Comparison Computation Program");
-		
-		//methods call	               
-                Length_Calculation();
-                Length_Comparison();
-                Using_CompareToMehod();
-         }
 	
-	//creating method for length calculation
- 
+	//method: length calculation
         public static void Length_Calculation(){
 			//declaring variables	
 			double x1,x2,y1,y2;
@@ -50,8 +39,8 @@ public class Line_Comparison {
                        
                  
 		}
-	// creating method for comparison of length of two lines
-       public static void Length_Comparison(){
+	//method: comparison of length of two lines
+        public static void Length_Comparison(){
                         if(length1.equals(length2))
                         {
                                 System.out.println("The length of line are equals");
@@ -62,8 +51,8 @@ public class Line_Comparison {
                         }
 
                   }                 
-      // creating method for compare length of lines using compareTo methods 	
-     public static void Using_CompareToMehod(){
+        //method: compare length of lines using compareTo methods 	
+        public static void Using_CompareToMehod(){
 		int check = length1.compareTo(length2);
 		if(check == 0){
 			System.out.println("The length of line 1 is equals to line 2");
@@ -78,4 +67,13 @@ public class Line_Comparison {
 
         }
 
+        public static void main(String[] args) {
+
+              System.out.println("Welcome to Line Comparison Computation Program");
+
+              //methods call
+              Length_Calculation();
+              Length_Comparison();
+              Using_CompareToMehod();
+         }
 }
