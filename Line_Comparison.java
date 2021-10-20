@@ -9,7 +9,7 @@ public class Line_Comparison {
         public static Double length2 = 0.0d;
 	
 	//method: length calculation
-        public static void Length_Calculation(){
+        public static void lengthCalculation(){
 			//declaring variables	
 			double x1,x2,y1,y2;
                         double x3,x4,y3,y4;
@@ -40,7 +40,7 @@ public class Line_Comparison {
                  
 		}
 	//method: comparison of length of two lines
-        public static void Length_Comparison(){
+        public static void lengthComparison(){
                         if(length1.equals(length2))
                         {
                                 System.out.println("The length of line are equals");
@@ -52,7 +52,7 @@ public class Line_Comparison {
 
                   }                 
         //method: compare length of lines using compareTo methods 	
-        public static void Using_CompareToMehod(){
+        public static void usingCompareToMehod(){
 		int check = length1.compareTo(length2);
 		if(check == 0){
 			System.out.println("The length of line 1 is equals to line 2");
@@ -72,8 +72,8 @@ public class Line_Comparison {
               System.out.println("Welcome to Line Comparison Computation Program");
 
               //methods call
-              Length_Calculation();
-              Length_Comparison();
-              Using_CompareToMehod();
+              lengthCalculation();
+              lengthComparison();
+              usingCompareToMehod();
          }
 }
